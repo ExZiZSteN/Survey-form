@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id ="title">Survey Form</h1>
+    <p id ="description">Thank you to help me improve the platform</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label id = "name-label" for="name">Name <input id ="name" type = "text" placeholder="Enter your Name" required /></label>
+        <label id="email-label" for="email">Email <input id = "email" type="email" placeholder="Enter your Email" required /></label>
+        <label id= "number-label" for="number">Age (optional) <input id="number" type="number" placeholder="Age" min = "14" max = "120"></label>
+        <label for="dropdown">How did you hear about us?
+          <select id = "dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Advert on YouTube</option>
+            <option value="2">Surfing net</option>
+            <option value="3">From friends</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you like our website?</legend>
+        <label for="yes"><input type ="radio" id = "yes" name="opinion" class="inline" value="yes"> Yes</label>
+        <label for="no"><input type = "radio" id = "no" name="opinion" class="inline" value="no"> No</label>
+      </fieldset>
+      <fieldset aria-required="true">
+        <legend>What you like to improve?</legend>
+        <label for ="videos"><input id ="videos" type ="checkbox" value="videos" class="inline">More video</label>
+        <label for ="news"><input id = "news" type="checkbox" value="news" class="inline">See more news</label>
+        <label for = "nothing"><input id="nothing" type ="checkbox" value="nothing" class="inline">None</label>
+      </fieldset>
+      <label for="comments-suggestions"> Any comments or suggestions?
+        <textarea id ="comments-suggestions" name="comments-suggestions" rows="3" cols="30" placeholder="Enter your comment here.."></textarea>
+      </label>
+      <input id = "submit"type="submit" value="Submit">
+    </form>
+  </body>
+</html>
